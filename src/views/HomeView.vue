@@ -6,3 +6,7 @@
     <h1>Homepage</h1>
   </main>
 </template>
+
+<style>
+
+</style>
