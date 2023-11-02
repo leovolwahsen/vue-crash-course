@@ -1,3 +1,11 @@
+# FontAwesome Plugin can be called in entire repository. Good Practice!!
+
+```sh
+Plugin for Fontawesome created in assets/fontawesome/fontawesome.js very usefull for future project
+```
+
+
+
 # vue-crash-course
 
 This template should help get you started developing with Vue 3 in Vite.
