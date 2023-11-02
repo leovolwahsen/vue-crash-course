@@ -1,6 +1,35 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
+<script>
+import { RouterLink, createRouter, createWebHistory } from 'vue-router';
+import HomeView from "./views/HomeView.vue";
+import AboutView from "./views/AboutView.vue"
 
+const routes = [
+  {
+    path: '/',
+    component: HomeView 
+  },
+  {
+    path: '/about',
+    component: AboutView 
+  }
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+});
+
+export default {
+  name: "App",
+  components: {
+    RouterLink
+  },
+  setup() {
+    return {
+      router
+    }
+  }
+}
 </script>
 
 <template>
@@ -8,8 +37,6 @@ import { RouterLink, RouterView } from 'vue-router'
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/about">About</RouterLink>
   </nav>
-
-
   <RouterView />
 </template>
 

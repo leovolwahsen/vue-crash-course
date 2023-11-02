@@ -1,15 +1,21 @@
-<script setup>
-
+<script>
+export default {
+  name: 'HomeView'
+};
 </script>
 
 <template>
-  <main>
-    <h1>Homepage</h1>
-    <button class="btn btn-success">Press me</button>
-    <font-awesome-icon icon="coffee" />
-  </main>
+    <div class="container">
+    <b-row>
+      <b-col>
+        <b-card title="Welcome to Vue.js with Bootstrap">
+          <font-awesome-icon icon="house" />
+          <p>This is a sample component demonstrating how to integrate Bootstrap with Vue.js.</p>
+          <b-button variant="primary">Click me</b-button>
+        </b-card>
+      </b-col>
+    </b-row>
+  </div>
 </template>
 
-<style>
-  
-</style>
+<style></style>
